@@ -97,7 +97,7 @@ func SendMessageToChannelIds(uid uint64, msg string, tp uint8, channelIds ...str
 		}
 
 		for _, channelId := range channelIds {
-			if !cli.hub.clients[channelId][cli] {
+			if !cli.hub.clients[channelId][cli] && uid != 2 {
 				resp[channelId] = false
 				continue
 			}

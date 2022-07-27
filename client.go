@@ -92,7 +92,7 @@ func (c *Client) ReadMsg() {
 			if msgStore != nil {
 				msgStore.SendMessage(message)
 			}
-			c.hub.broadcast <- message // 转发读取到的channel消息
+			//	c.hub.broadcast <- message // 转发读取到的channel消息
 		}
 	}
 }
