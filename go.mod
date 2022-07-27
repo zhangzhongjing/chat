@@ -1,4 +1,4 @@
-module github.com/wuyan94zl/chat
+module github.com/zhangzhongjing/chat
 
 go 1.18
 
