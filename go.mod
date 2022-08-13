@@ -1,4 +1,4 @@
-module github.com/zhangzhongjing/chat
+module github.com/zhangzhongjing/adminchat
 
 go 1.18
 
