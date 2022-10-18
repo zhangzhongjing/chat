@@ -71,6 +71,7 @@ func (c *Client) ReadMsg() {
 		}
 		if clients[c.Id] != c {
 			msgStore.ErrorLogServer(fmt.Errorf("用户`%d`未登录，不能发送消息", c.Id))
+			c.conn.Close()
 			continue
 		}
 
